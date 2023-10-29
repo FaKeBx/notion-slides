@@ -1,4 +1,3 @@
-"use server";
 import puppeteer from "puppeteer";
 import { getPosts } from "@/app/_services/notion";
 import Link from "next/link";
@@ -63,5 +62,5 @@ export default async function SlideElement({ params }: { params: { slug: string 
 
   slideGenerator();
 
-  return <>{slideGenerator()}</>;
+  return await (<>{slideGenerator()}</>);
 }

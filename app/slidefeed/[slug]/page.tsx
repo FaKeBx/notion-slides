@@ -1,4 +1,3 @@
-"use server";
 import { getPost } from "@/app/_services/notion";
 import SlideElement from "@/app/slidecreate/page";
 import Link from "next/link";
