@@ -1,3 +1,4 @@
+"use server";
 import { getPost } from "@/app/_services/notion";
 import SlideElement from "@/app/slidecreate/page";
 import Link from "next/link";
@@ -40,7 +41,7 @@ export default async function Slide({ params }: { params: { slug: string } }) {
             {post.content}
           </ReactMarkdown>
           <h2 className=" text-black font-semibold mt-6">Slide:</h2>
-          {/* <SlideElement params={params} /> */}
+          <SlideElement params={params} />
         </div>
       </div>
     </div>

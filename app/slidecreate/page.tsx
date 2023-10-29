@@ -1,3 +1,4 @@
+"use server";
 import puppeteer from "puppeteer";
 import { getPosts } from "@/app/_services/notion";
 import Link from "next/link";
