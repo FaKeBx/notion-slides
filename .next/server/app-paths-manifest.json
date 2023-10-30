@@ -1,5 +1,4 @@
 {
   "/page": "app/page.js",
-  "/slidefeed/page": "app/slidefeed/page.js",
-  "/slidefeed/[slug]/page": "app/slidefeed/[slug]/page.js"
+  "/slidefeed/page": "app/slidefeed/page.js"
 }
