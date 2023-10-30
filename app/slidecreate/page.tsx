@@ -17,7 +17,7 @@ export default async function SlideElement({ params }: { params: { slug: string 
 
     try {
       // Navegar para o site desejado
-      await page.goto("https://snackthis.co/presentations/", { timeout: 12000 });
+      // await page.goto("https://snackthis.co/presentations/", { timeout: 12000 });
 
       // Localize o elemento de entrada de URL e cole a URL desejada
       await page.type('input[name="url"]', `${slide[0].url}`, { delay: 20 });
