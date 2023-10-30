@@ -41,7 +41,7 @@ export default async function Slide({ params }: { params: { slug: string } }) {
             {post.content}
           </ReactMarkdown>
           <h2 className=" text-black font-semibold mt-6">Slide:</h2>
-          {slide}
+          {/* {slide} */}
         </div>
       </div>
     </div>
