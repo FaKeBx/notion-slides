@@ -9,8 +9,6 @@ const clientId = process.env.OAUTH_CLIENT_ID;
 const clientSecret = process.env.OAUTH_CLIENT_SECRET;
 const redirectUri = process.env.OAUTH_REDIRECT_URI;
 
-const testeapi = "secret_avGzT1bIYdCYIbnVKb2dYrVHNqNp9jctUAQ6wu6vBz6";
-
 export default async function token() {
   // Obtém a URL atual
   const currentUrl = window.location.href;
@@ -61,6 +59,7 @@ export default async function token() {
   return console.log(response.json());
 }
 
+const testeapi = "secret_avGzT1bIYdCYIbnVKb2dYrVHNqNp9jctUAQ6wu6vBz6";
 const notion = new Client({ auth: testeapi });
 const DATABASE_ID = "c774dab31c35461ca0bc77c21162162e";
 
