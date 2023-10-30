@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown";
 
 export default async function Slide({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
-  const slide = await (<SlideElement params={params} />);
 
   return (
     <div className="flex place-content-evenly w-full min-h-screen p-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
@@ -41,7 +40,7 @@ export default async function Slide({ params }: { params: { slug: string } }) {
             {post.content}
           </ReactMarkdown>
           <h2 className=" text-black font-semibold mt-6">Slide:</h2>
-          {/* {slide} */}
+          {<SlideElement params={params} />}
         </div>
       </div>
     </div>
