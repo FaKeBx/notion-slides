@@ -6,10 +6,6 @@ import ReactMarkdown from "react-markdown";
 export default async function Slide({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
 
-  function slideShow() {
-    return <SlideElement params={params} />;
-  }
-
   return (
     <div className="flex place-content-evenly w-full min-h-screen p-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
       <div className="  m-auto max-w-2xl p-6 rounded-3xl grid content-start bg-gradient-to-b from-gray-100 to-gray-300">
