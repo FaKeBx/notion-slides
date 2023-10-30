@@ -59,8 +59,7 @@ export default async function token() {
   return console.log(response.json());
 }
 
-const testeapi = "secret_avGzT1bIYdCYIbnVKb2dYrVHNqNp9jctUAQ6wu6vBz6";
-const notion = new Client({ auth: testeapi });
+const notion = new Client({ auth: process.env.NOTION_API_KEY });
 const DATABASE_ID = "c774dab31c35461ca0bc77c21162162e";
 
 export async function getPosts() {
