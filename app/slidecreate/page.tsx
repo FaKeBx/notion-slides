@@ -60,7 +60,7 @@ export default async function SlideElement({ params }: { params: { slug: string 
     }
   };
 
-  slideGenerator();
+  await slideGenerator();
 
   return <>{slideGenerator()}</>;
 }
