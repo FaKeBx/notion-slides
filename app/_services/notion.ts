@@ -9,6 +9,8 @@ const clientId = process.env.OAUTH_CLIENT_ID;
 const clientSecret = process.env.OAUTH_CLIENT_SECRET;
 const redirectUri = process.env.OAUTH_REDIRECT_URI;
 
+const testeapi = "secret_avGzT1bIYdCYIbnVKb2dYrVHNqNp9jctUAQ6wu6vBz6";
+
 export default async function token() {
   // Obtém a URL atual
   const currentUrl = window.location.href;
@@ -28,7 +30,7 @@ export default async function token() {
   const encoded = Buffer.from(`${clientId}:${clientSecret}`).toString("base64");
 
   const response = await fetch(
-    "https://api.notion.com/v1/oauth/authorize?client_id=2f76da2e-2bcc-4e31-afcf-2967b3dfe5c7&response_type=code&owner=user&redirect_uri=http%3A%2F%2Flocalhost%3A3000",
+    "https://api.notion.com/v1/oauth/authorize?client_id=2f76da2e-2bcc-4e31-afcf-2967b3dfe5c7&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fnotion-slides.vercel.app%2Fslidefeed",
     {
       method: "POST",
       headers: {
@@ -59,7 +61,7 @@ export default async function token() {
   return console.log(response.json());
 }
 
-const notion = new Client({ auth: process.env.NOTION_API_KEY });
+const notion = new Client({ auth: testeapi });
 const DATABASE_ID = "c774dab31c35461ca0bc77c21162162e";
 
 export async function getPosts() {
