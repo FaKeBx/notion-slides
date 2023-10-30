@@ -56,10 +56,10 @@ export default async function token() {
     return accessToken;
   }
 
-  return console.log(response.json());
+  return response.json();
 }
 
-const notion = new Client({ auth: process.env.NOTION_API_KEY });
+const notion = new Client({ auth:  });
 const DATABASE_ID = "c774dab31c35461ca0bc77c21162162e";
 
 export async function getPosts() {

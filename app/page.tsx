@@ -20,12 +20,6 @@ export default function Home() {
             Slide Feed
           </Link>
           <Link
-            className=" mb-6 px-3 py-2 text-sm font-medium text-center justify-self-center text-gray-900 rounded-lg bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 hover:border-black"
-            href="/slidecreate"
-          >
-            slide
-          </Link>
-          <Link
             className=" mb-12 px-3 py-2 text-sm font-medium text-center justify-self-center text-gray-900 rounded-lg bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 hover:border-black"
             href={
               "https://api.notion.com/v1/oauth/authorize?client_id=2f76da2e-2bcc-4e31-afcf-2967b3dfe5c7&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fnotion-slides.vercel.app%2Fslidefeed"

@@ -6,12 +6,12 @@ export default async function SlideFeed() {
 
   return (
     <>
-      <div className=" m-auto w-full grid p-6 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+      <div className=" m-auto min-h-screen content-start w-full grid p-6 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
         <h1 className="text-white text-4xl mb-4 font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
           Notion Slides Feed
         </h1>
         <Link
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full justify-self-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]"
+          className=" text-white self-center font-bold py-2 px-4 rounded-full justify-self-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]"
           href="/"
         >
           Home

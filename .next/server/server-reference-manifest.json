@@ -2,26 +2,32 @@
   "node": {
     "687542d317bee91db67e5943bd25f69e73aab1a1": {
       "workers": {
-        "app/slidecreate/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!"
+        "app/slidefeed/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!",
+        "app/slidefeed/[slug]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/slidecreate/page": "rsc"
+        "app/slidefeed/page": "rsc",
+        "app/slidefeed/[slug]/page": "rsc"
       }
     },
     "5147f9b954583c964c5c0259b8180e054dac864f": {
       "workers": {
-        "app/slidecreate/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!"
+        "app/slidefeed/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!",
+        "app/slidefeed/[slug]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/slidecreate/page": "rsc"
+        "app/slidefeed/page": "rsc",
+        "app/slidefeed/[slug]/page": "rsc"
       }
     },
     "009fe3c9da0ee343f34868ceb8ec4b90af7ee627": {
       "workers": {
-        "app/slidecreate/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!"
+        "app/slidefeed/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!",
+        "app/slidefeed/[slug]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffelipekucharski%2FDesktop%2Fnotion-slides%2Fapp%2F_services%2Fnotion.ts%22%2C%5B%22default%22%2C%22getPosts%22%2C%22getPost%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/slidecreate/page": "rsc"
+        "app/slidefeed/page": "rsc",
+        "app/slidefeed/[slug]/page": "rsc"
       }
     }
   },
