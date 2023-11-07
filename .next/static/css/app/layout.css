@@ -659,6 +659,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.static {
+  position: static;
+}
 .m-auto {
   margin: auto;
 }

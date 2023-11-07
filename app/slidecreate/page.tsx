@@ -20,14 +20,16 @@ export default async function SlideElement({ params }: { params: { slug: string 
       await page.goto("https://snackthis.co/presentations/", { timeout: 12000 });
 
       // Localize o elemento de entrada de URL e cole a URL desejada
+      await page.waitForSelector('input[name="url"]');
       await page.type('input[name="url"]', `${slide[0].url}`, { delay: 20 });
 
       // Pode ser necessário clicar em um botão "Enviar" ou realizar alguma ação adicional, dependendo do site
-      await page.click("button");
+      await Promise.all([page.waitForNavigation(), page.click("button")]);
 
-      await page.waitForNavigation();
-
+      await page.waitForSelector("li");
       await page.click("li");
+
+      await page.waitForSelector('input[type="text"]');
 
       // Aguarde alguns segundos para que a página carregue completamente
       const iframeUrl = await page.$eval('input[type="text"]', (inputElement) => {
@@ -56,11 +58,10 @@ export default async function SlideElement({ params }: { params: { slug: string 
     } catch (error) {
       console.error("Ocorreu um erro:", error);
     } finally {
+      console.log("Fechando o navegador...");
       await browser.close();
     }
   };
-
-  slideGenerator();
 
   return <>{slideGenerator()}</>;
 }
