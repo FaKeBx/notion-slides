@@ -63,5 +63,5 @@ export default async function SlideElement({ params }: { params: { slug: string 
     }
   };
 
-  return <>{slideGenerator()}</>;
+  if (slideGenerator != undefined) return <>{slideGenerator()}</>;
 }
