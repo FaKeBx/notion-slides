@@ -1,9 +1,16 @@
-## Criação de Blog com NextJS, serveless functions, Notion como CMS, Vercel e tailwind
+<h1>Projeto da faculdade para a matéria de Sistemas Distribuídos</h1>
 
-- [x] Criar projeto NextJS
-- [x] Explorar API do notion para ver como buscar os dados
-- [x] Criar conta no Notion
-- [x] Criar Blog Home page
-  - nós precisamos saber todos os [Titles, Slug, Tags, PublishedAt] dos posts
-- [x] Criar Blog Post page
-  - fetch the content of the post based on the slug
+<p>O projeto tem como objetivo gerar slides a partir de páginas do Notion</p>
+
+<h2>Ferramentas usadas</h2>
+<ul>
+  <li>
+    Notion Api
+  </li>
+  <li>
+    Puppeteer
+  </li>
+  <li>
+    Snackthis
+  </li>
+</ul>
