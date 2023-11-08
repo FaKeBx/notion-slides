@@ -14,13 +14,13 @@ export default function Home() {
             documento{" "}
           </p>
           <Link
-            className=" mb-6 px-3 py-2 text-sm font-medium text-center justify-self-center text-gray-900 rounded-lg bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 hover:border-black"
+            className="transition hover:scale-110 mb-6 px-3 py-2 text-sm font-medium text-center justify-self-center text-gray-900 rounded-lg bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 hover:border-black"
             href="/slidefeed"
           >
             Slide Feed
           </Link>
           <Link
-            className=" mb-12 px-3 py-2 text-sm font-medium text-center justify-self-center text-gray-900 rounded-lg bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 hover:border-black"
+            className=" transition hover:scale-110 mb-12 px-3 py-2 text-sm font-medium text-center justify-self-center text-gray-900 rounded-lg bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 hover:border-black"
             href={
               "https://api.notion.com/v1/oauth/authorize?client_id=2f76da2e-2bcc-4e31-afcf-2967b3dfe5c7&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fnotion-slides.vercel.app%2Fslidefeed"
             }
@@ -37,7 +37,7 @@ export default function Home() {
                 width={120}
                 height={120}
               />
-              <span className=" text-center ">Felipe Kucharski</span>
+              <span className=" text-center font-bold">Felipe Kucharski</span>
             </div>
             <div className="grid">
               <Image
@@ -47,7 +47,7 @@ export default function Home() {
                 width={120}
                 height={120}
               />
-              <span className=" text-center ">Alipio Neto</span>
+              <span className=" text-center font-bold">Alipio Neto</span>
             </div>
           </div>
         </div>
