@@ -11,13 +11,13 @@ export default async function SlideElement({ params }: { params: { slug: string 
     }
   });
 
-  const slideGenerator = async () => {
+  async function slideGenerator() {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     try {
       // Navegar para o site desejado
-      await page.goto("https://snackthis.co/presentations/", { timeout: 12000 });
+      await page.goto("https://snackthis.co/presentations/");
 
       // Localize o elemento de entrada de URL e cole a URL desejada
       await page.waitForSelector('input[name="url"]');
@@ -61,7 +61,7 @@ export default async function SlideElement({ params }: { params: { slug: string 
       console.log("Fechando o navegador...");
       await browser.close();
     }
-  };
+  }
 
   if (slideGenerator != undefined) return <>{slideGenerator()}</>;
 }
