@@ -1,10 +1,17 @@
-import { getPost } from "@/app/_services/notion";
+import { getPost, getPosts } from "@/app/_services/notion";
 import SlideElement from "@/app/slidecreate/page";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
 export default async function Slide({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
+  const posts = await getPosts();
+
+  const slide = posts.filter((post) => {
+    if (post.slug == params.slug) {
+      return post.url;
+    }
+  });
 
   return (
     <>
@@ -25,7 +32,7 @@ export default async function Slide({ params }: { params: { slug: string } }) {
 
           <div>
             <h2 className=" text-black font-semibold">Markdown:</h2>
-            <ReactMarkdown
+            {/* <ReactMarkdown
               className=" grid justify-self-start "
               components={{
                 h1: ({ node, ...props }) => <h1 className="text-3xl text-black mt-6 font-bold" {...props} />,
@@ -39,9 +46,18 @@ export default async function Slide({ params }: { params: { slug: string } }) {
               }}
             >
               {post.content}
-            </ReactMarkdown>
+            </ReactMarkdown> */}
             <h2 className=" text-black font-semibold mt-6">Slide:</h2>
             {<SlideElement params={params} />}
+            {/* {
+              <iframe
+                className=" m-auto mt-10 rounded-lg shadow-md mb-4 hover:underline"
+                src={`https://snackthis.co/presentations/${slide[0].url}}`}
+                width={540}
+                height={320}
+              ></iframe>
+            }
+            <div>{slide[0].url}</div> */}
           </div>
         </div>
       </div>

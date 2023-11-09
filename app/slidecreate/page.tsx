@@ -40,12 +40,12 @@ export default async function SlideElement({ params }: { params: { slug: string 
       return (
         <>
           <div className=" grid justify-center ">
-            <iframe
+            {/* <iframe
               className=" m-auto mt-10 rounded-lg shadow-md mb-4 hover:underline"
               src={iframeUrl}
               width={540}
               height={320}
-            ></iframe>
+            ></iframe> */}
             <div className=" grid m-auto justify-items-center">
               <Link href={iframeUrl} className=" mb-4 text-center text-black hover:underline ">
                 {iframeUrl}

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@marp-team/marpit": "^2.6.1",
     "@notionhq/client": "^2.2.10",
     "@types/node": "20.4.7",
     "@types/react": "18.2.18",
