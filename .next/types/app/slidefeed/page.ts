@@ -1,4 +1,4 @@
-// File: /Users/felipekucharski/Desktop/notion-slides/app/slidefeed/page.tsx
+// File: /Users/felipekucharski/Desktop/notionSlides/notion-slides/app/slidefeed/page.tsx
 import * as entry from '../../../../app/slidefeed/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

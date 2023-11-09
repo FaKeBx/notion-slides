@@ -1,6 +1,7 @@
 import { getPost, getPosts } from "@/app/_services/notion";
 import SlideElement from "@/app/slidecreate/page";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 
 export default async function Slide({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
@@ -30,8 +31,8 @@ export default async function Slide({ params }: { params: { slug: string } }) {
           </Link>
 
           <div>
-            {/* <h2 className=" text-black font-semibold">Markdown:</h2> */}
-            {/* <ReactMarkdown
+            <h2 className=" text-black font-semibold">Markdown:</h2>
+            <ReactMarkdown
               className=" grid justify-self-start "
               components={{
                 h1: ({ node, ...props }) => <h1 className="text-3xl text-black mt-6 font-bold" {...props} />,
@@ -45,7 +46,7 @@ export default async function Slide({ params }: { params: { slug: string } }) {
               }}
             >
               {post.content}
-            </ReactMarkdown> */}
+            </ReactMarkdown>
             <h2 className=" text-black font-semibold mt-6">Slide:</h2>
             {
               <iframe
